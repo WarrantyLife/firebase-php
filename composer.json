@@ -16,6 +16,7 @@
         "source": "https://github.com/kreait/firebase-php",
         "chat": "https://discord.gg/Yacm7unBsr"
     },
+    "minimum-stability": "alpha",
     "require": {
         "php": "^7.4|^8.0",
         "ext-ctype": "*",

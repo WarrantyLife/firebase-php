@@ -21,9 +21,11 @@ final class Notification implements \JsonSerializable
         $this->body = $body;
         $this->imageUrl = $imageUrl;
 
-        if ($this->title === null && $this->body === null) {
-            throw new InvalidArgumentException('The title and body of a notification cannot both be NULL');
-        }
+        // This was removed in later versions of this bundle to support data-only messages.
+        // We cannot upgrade due to version constraints
+        // if ($this->title === null && $this->body === null) {
+        //     throw new InvalidArgumentException('The title and body of a notification cannot both be NULL');
+        // }
     }
 
     /**
